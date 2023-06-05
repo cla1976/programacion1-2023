@@ -35,6 +35,41 @@
 			"response": []
 		},
 		{
+			"name": "Put Alumno",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"email1@gmail.com\",\r\n    \"first_name\": \"Juan Jose\",\r\n    \"last_name\": \"Perez\",\r\n    \"dni\": \"22333444\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{localhost-test-api}}/api/v1/alumnos/:id",
+					"host": [
+						"{{localhost-test-api}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"alumnos",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Get Alumnos",
 			"request": {
 				"method": "GET",
